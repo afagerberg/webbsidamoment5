@@ -1,0 +1,54 @@
+<!-- Moment 5 DT173G av Alice Fagerberg-->
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Webbutveckling III moment 5</title>
+</head>
+<body>
+    <header>
+        <h1>Webbutveckling III Moment 5</h1>
+
+        <div class="mybuttons">    
+        <a href="#form" class="goto" id="gotoadd">Lägg till kurs</a>
+        <a href="#courselist" class="goto" id="gotocourses">Mina kurser</a>
+        </div>
+
+    </header>
+
+    <div id="content">
+    
+        <h2 id="formheading">Lägg till kurs</h2>
+        
+        <form id="form">
+            <label for="coursecode"> Kurskod:<br>
+            <input type="text" name="coursecode" id="coursecode"></label><br>
+            <label for="cname"> Kursnamn:<br>
+            <input type="text" name="cname" id="cname"></label><br>
+            <label for="progression"> Progression:<br>
+            <input type="text" name="progression" id="progression"></label><br>
+            <label for="courseplan"> Kursplan:<br>
+            <input type="text" name="courseplan" id="courseplan"></label><br>
+            <button id="add">Lägg till Kurs</button>
+            <button id="update"> Uppdatera Kurs</button>
+        </form>
+        <p id="message"></p>
+
+        <h2 id="coursesheading">Kurser jag har läst</h2>
+        <div id="courselist">
+
+        </div>
+    </div>
+<footer>
+    <p>Webbutveckling III Moment 5 // Alice Fagerberg</p>
+</footer>    
+
+
+    
+<script src="js/main.js"></script>    
+</body>
+</html>

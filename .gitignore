@@ -1,0 +1,5 @@
+#ignorera node_modules
+node_modules
+
+#ignorera mappen pub
+pub

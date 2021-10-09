@@ -1,0 +1,195 @@
+/*Moment 5 DT173G av Alice Fagerberg */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@mixin formbutton($backgcolor){
+    display:block;
+    width:100%;
+    max-width:380px;
+    margin:0 auto;
+    border:0;
+    padding:15px;
+    background-color: $backgcolor;
+    transition:all 0.3s;
+    cursor:pointer;
+    color:white;
+    font-weight:bold;
+    margin-bottom:15px;
+    margin-top:15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position:sticky;
+    top:0;
+    display:inline-block;
+    width:100%;
+    padding:30px;
+    margin-bottom:50px;
+    border-bottom:1px solid grey;
+    background-color:white;
+    display:flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align:center;
+}
+
+.mybuttons {
+    padding-top:15px;
+    width:fit-content;
+    margin:0 auto;
+}
+
+.goto {
+    display:inline-block;
+    padding:10px 15px 10px 15px;
+    margin-bottom:10px;
+    background-color:coral;
+    color:white;
+    font-weight:bold;
+    transition:all 0.3s;
+}
+.goto:hover{
+    background-color:rgb(223, 84, 33);
+}
+
+#content {
+    width:94%;
+    margin:0 auto;
+}
+
+h2 {
+    max-width:800px;
+    margin:0 auto;
+    margin-bottom:15px;
+    margin-top:15px;
+}
+
+#formheading{
+    max-width:380px;
+}
+
+@media screen and (min-width:815px){
+    #formheading{
+        max-width:800px;
+    }
+}
+
+
+#courselist {
+    padding:20px;
+    border:1px solid rgb(165, 165, 165);
+    max-width:800px;
+    margin:0 auto;
+}
+
+.course {
+    list-style: none;
+    border-bottom:1px solid grey;
+    padding:10px 0 10px 0;
+}
+
+li {
+    margin-bottom:10px;
+    a {
+        color:rgb(250, 112, 70);
+        font-weight:bold;
+    }
+    a:hover{color:rgb(255, 198, 181);}
+
+    button{
+        border:2px solid coral;
+        border-radius:5px;
+        padding:10px;
+        background-color:transparent;
+        color:coral;
+        font-weight:bold;
+        margin-top:15px;
+        cursor:pointer;
+        transition:all 0.3s;
+    }
+    
+    button:hover{
+        background-color:coral;
+        color:white;
+    }
+        
+}
+
+.line {
+    border-top:1px solid rgb(207, 207, 207);
+}
+
+
+#message{
+    max-width:800px;
+    margin:0 auto;
+    margin-top:15px;
+    color:rgb(212, 25, 0);
+    font-weight:bold;
+}
+
+
+form {
+    max-width:800px;
+    width:100%;
+    margin:0 auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+
+    label {    
+        max-width:380px;
+        width:100%;   
+        margin:0 auto;
+    }
+
+    input{
+        width:100%;
+        padding:10px;
+        margin-bottom:16px;
+        border-radius:5px;
+    }
+}
+
+
+#add {
+    @include formbutton(coral);
+    
+}
+#add:hover { background-color: rgb(255, 172, 142);}
+
+#update {
+    @include formbutton(rgb(8, 85, 129));
+    display:none;
+}
+#update:hover { background-color: rgb(46, 137, 190);}
+
+footer {
+    margin-top:50px;
+    padding:30px;
+    border-top:2px solid rgb(238, 202, 189);
+
+    p {
+        text-align:center;
+        color:rgb(85, 85, 85);
+    }
+}
