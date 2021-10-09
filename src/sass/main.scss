@@ -98,6 +98,7 @@ h2 {
     border:1px solid rgb(165, 165, 165);
     max-width:800px;
     margin:0 auto;
+    scroll-margin-top:280px;
 }
 
 .course {
@@ -155,6 +156,7 @@ form {
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-between;
+    scroll-margin-top:260px;
 
     label {    
         max-width:380px;
